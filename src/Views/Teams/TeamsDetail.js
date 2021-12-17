@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function TeamsDetail() {
   const { id } = useParams();
-  const [teams, setTeams] = useState(null);
+  const [teams, setTeams] = useState([]);
 
   useEffect(() => {
     getTeamById(id).then(({ data }) => setTeams(data));
@@ -17,6 +17,8 @@ export default function TeamsDetail() {
       <Team team={teams} />
       <Link className="home-detail" to={`/`}>
         Home
+        {/* <p>City: {city}</p>
+        <p>State: {state}</p> */}
       </Link>
     </>
   );

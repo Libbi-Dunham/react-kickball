@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
+import React from 'react';
 
-export default function Team({ team: { id, name, city, state } }) {
+export default function Teams({ team: { id, name, city, state } }) {
   return (
     <article className="team">
-      <Link to={`teams/${id}`} />
+      <Link to={`/teams/${id}`}>
+        <p>Name: {name}</p>
+      </Link>
       <p>City: {city}</p>
       <p>State: {state}</p>
-      <p>Name: {name}</p>
     </article>
   );
 }
