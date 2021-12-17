@@ -1,4 +1,4 @@
-import client, { checkError } from './client';
+import { client, checkError } from './client';
 
 export async function getTeams() {
   let request = await client.from('teams').select().order('name');
