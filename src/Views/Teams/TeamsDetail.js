@@ -13,11 +13,11 @@ export default function TeamsDetail() {
   }, [id]);
 
   return (
-    <h1>Team</h1>
-
-    //   <Team team={teams} />
-    //   <Link className="home-detail" to={`/`}>
-    //     Home
-    //   </Link>
+    <>
+      <Team team={teams} />
+      <Link className="home-detail" to={`/`}>
+        Home
+      </Link>
+    </>
   );
 }
