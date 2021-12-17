@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-// import Player from '../../Components/Player/Players';
 import { getPlayers } from '../../services/PlayerRoute';
 import { Link } from 'react-router-dom';
 
