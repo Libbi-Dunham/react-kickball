@@ -5,9 +5,9 @@ export default function Teams({ team: { id, name, city, state } }) {
   return (
     <article className="team">
       <Link to={`/teams/${id}`}></Link>
-      <p>Name: {name}</p>
-      <p>City: {city}</p>
-      <p>State: {state}</p>
+      <h2>Name: {name}</h2>
+      <h3>City: {city}</h3>
+      <h3>State: {state}</h3>
     </article>
   );
 }
