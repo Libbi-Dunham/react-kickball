@@ -6,11 +6,13 @@ test('renders the team details', () => {
   const container = render(
     <MemoryRouter>
       <Team
-        city="Portland"
-        state="OR"
-        id="1"
-        name="Bridge City Sneakers"
-        players={[{ name: 'Hans Olo' }]}
+        team={{
+          city: 'Portland',
+          state: 'OR',
+          id: '1',
+          name: 'Bridge City Sneakers',
+          players: [{ name: 'Hans Olo' }],
+        }}
       />
     </MemoryRouter>
   );
