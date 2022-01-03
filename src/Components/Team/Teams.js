@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 export default function Teams({ team: { id, name, city, state, players } }) {
-  console.log(players);
   return (
     <article className="team">
       <Link to={`/teams/${id}`}></Link>
