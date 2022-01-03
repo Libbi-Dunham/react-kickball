@@ -1,7 +1,16 @@
+body {
+  background-color: #9e90a2;
+}
 .App {
   text-align: center;
+  font-family: 'MayinsHandRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 
+li {
+  list-style-type: none;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
