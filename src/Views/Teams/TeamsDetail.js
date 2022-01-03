@@ -8,12 +8,22 @@ export default function TeamsDetail() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
+    const fetchData = async () => {
+      const data = await getTeamById(id);
+      setTeams(data.data);
+    };
+    fetchData();
+  }, [id]);
+
+  useEffect(() => {
     getTeamById(id).then(({ data }) => setTeams(data));
   }, [id]);
 
   return (
     <>
-      <Team team={teams} />
+      <li key={teams.id}>
+        <Team team={teams} />
+      </li>
     </>
   );
 }
