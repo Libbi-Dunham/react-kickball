@@ -5,41 +5,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <article
-        class="team"
-      >
-        <a
-          href="/teams/undefined"
-        />
-        <h2>
-          Name: 
-        </h2>
-        <h3>
-          City: 
-        </h3>
-        <h3>
-          State: 
-        </h3>
-      </article>
+      <h2>
+         loading 
+      </h2>
     </div>
   </body>,
   "container": <div>
-    <article
-      class="team"
-    >
-      <a
-        href="/teams/undefined"
-      />
-      <h2>
-        Name: 
-      </h2>
-      <h3>
-        City: 
-      </h3>
-      <h3>
-        State: 
-      </h3>
-    </article>
+    <h2>
+       loading 
+    </h2>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
