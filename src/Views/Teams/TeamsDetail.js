@@ -6,10 +6,14 @@ import { getTeamById } from '../../services/TeamRoute';
 export default function TeamsDetail() {
   const { id } = useParams();
   const [teams, setTeams] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getTeamById(id).then(({ data }) => setTeams(data));
+    getTeamById(id)
+      .then(({ data }) => setTeams(data))
+      .finally(() => setLoading(false));
   }, [id]);
+  if (loading) return <h2> loading </h2>;
 
   return (
     <>
